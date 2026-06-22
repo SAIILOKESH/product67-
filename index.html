@@ -3,388 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Nova Smart Watch</title>
+    <title>Sai Lokesh | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #222;
-            background-color: #f2f6f5;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .site-header {
-            background-color: #0f4c4c;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo {
-            width: 55px;
-            height: 55px;
-        }
-
-        .header-text h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .header-text p {
-            margin: 5px 0 0;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 12px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        nav li {
-            margin: 0;
-        }
-
-        nav a {
-            display: inline-block;
-            padding: 8px 12px;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #0f4c4c;
-            background-color: white;
-        }
-
-        .button-container {
-            margin: 0;
-        }
-
-        .buy-btn {
-            display: inline-block;
-            padding: 10px 18px;
-            color: white;
-            background-color: #0b8a6c;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .buy-btn:hover {
-            background-color: #096a54;
-        }
-
-        .hero {
-            width: 90%;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .home-section {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            padding: 40px 0;
-        }
-
-        .home-content {
-            flex: 1;
-        }
-
-        .home-image-wrap {
-            flex: 1;
-        }
-
-        .hero-tag {
-            color: #0b8a6c;
-            font-weight: bold;
-        }
-
-        .home-content h2 {
-            margin: 10px 0;
-            color: #0f4c4c;
-            font-size: 38px;
-        }
-
-        .home-content p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .home-image,
-        .product-image,
-        .product-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .product-section,
-        .about-section,
-        .contact-section {
-            padding: 35px 0;
-        }
-
-        .featured-product {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .featured-product img {
-            width: 50%;
-        }
-
-        .product-details h3,
-        .about-section h2,
-        .contact-section h2 {
-            color: #0f4c4c;
-        }
-
-        .product-cards-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            padding: 35px 0;
-        }
-
-        .product-card {
-            padding: 15px;
-            text-align: center;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .product-card h3 {
-            color: #0f4c4c;
-        }
-
-        .product-card img {
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .price {
-            color: #0b8a6c;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .about-section,
-        .contact-section {
-            line-height: 1.6;
-        }
-
-        .site-footer {
-            margin-top: 30px;
-            padding: 25px;
-            color: white;
-            background-color: #0f4c4c;
-            text-align: center;
-        }
-
-        .site-footer div {
-            margin-bottom: 15px;
-        }
-
-        .site-footer h3,
-        .site-footer p {
-            margin: 5px 0;
-        }
-
-        @media (max-width: 768px) {
-            .site-header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav ul {
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
-            .home-section,
-            .featured-product {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .featured-product img {
-                width: 100%;
-            }
-
-            .product-cards-section {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 500px) {
-            .brand {
-                flex-direction: column;
-            }
-
-            .home-content h2 {
-                font-size: 30px;
-            }
-
-            .product-cards-section {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="brand">
-            <img src="logo.svg" alt="Tech Nova logo" class="logo">
-            <div class="header-text">
-                <h1>TECH NOVA SMART WATCH</h1>
-                <p>Stay connected, stay ahead with the Tech Nova Smart Watch.</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="button-container">
-            <a href="#products" class="buy-btn header-btn">Buy Now</a>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">SL<span class="accent">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
         </div>
     </header>
 
-    <main class="hero">
-        <section class="home-section" id="home">
-            <div class="home-content">
-                <span class="hero-tag">New Arrival</span>
-                <h2>Meet the Future of Smart Wearables</h2>
-                <p>Track your fitness, stay connected, and upgrade your lifestyle with the latest smartwatch technology.</p>
-                <a href="#products" class="buy-btn">Explore More</a>
-            </div>
-            <div class="home-image-wrap">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-                     alt="Tech Nova Smart Watch"
-                     class="home-image"
-                     loading="eager">
-            </div>
-        </section>
-
-        <section class="product-section" id="features">
-            <div class="featured-product">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-                     alt="Tech Nova Smart Watch"
-                     class="product-image"
-                     loading="lazy">
-                <div class="product-details">
-                    <h3>Why Choose Tech Nova?</h3>
-                    <ul>
-                        <li>Heart rate &amp; sleep tracking</li>
-                        <li>Water-resistant for everyday use</li>
-                        <li>Long battery life</li>
-                        <li>Stylish look for work or workouts</li>
-                    </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content animate-on-scroll">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Sai Lokesh</h1>
+                <p class="hero-title">Full Stack Developer &amp; Designer</p>
+                <p class="hero-description">I craft beautiful, responsive websites and applications that bring ideas to life. Passionate about clean code, modern design, and seamless user experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/SAIILOKESH" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="mailto:sailokeshthangadu@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section class="product-cards-section" id="products">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Smart Watch Pro" loading="lazy">
-                <h3>Smart Watch Pro</h3>
-                <p class="price">₹129</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-initials">SL</div>
+                </div>
             </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Sport Fitness Band" loading="lazy">
-                <h3>Sport Fitness Band</h3>
-                <p class="price">₹89</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Classic Time Band" loading="lazy">
-                <h3>Classic Time Band</h3>
-                <p class="price">₹99</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Pulse Smart Watch" loading="lazy">
-                <h3>Pulse Smart Watch</h3>
-                <p class="price">₹149</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Elite Watch X" loading="lazy">
-                <h3>Elite Watch X</h3>
-                <p class="price">₹179</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Nova Fitness Watch" loading="lazy">
-                <h3>Nova Fitness Watch</h3>
-                <p class="price">₹159</p>
-                <a href="#contact" class="buy-btn">Buy Now</a>
-            </div>
-        </section>
-
-        <section class="about-section" id="about">
-            <h2>About Tech Nova</h2>
-            <p>We create smart wearable technology that combines performance, comfort, and style for modern lifestyles. Our mission is to help you stay productive, active, and connected every day.</p>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: support@technova.com</p>
-            <p>Phone: +91 6374866860</p>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div>
-            <h3>Address</h3>
-            <p>RAMNAGAR
-              RS PURAM COIMBATORE
-            </p>
         </div>
-        <div>
-            <h3>Contact Number</h3>
-            <p>6374866860</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>I'm a passionate developer with a keen eye for design and a love for building things that live on the web. I specialize in creating modern, responsive, and performant web applications.</p>
+                    <p>With experience across the full stack, I enjoy working on everything from pixel-perfect front-end interfaces to robust back-end architectures. I'm always eager to learn new technologies and take on challenging projects.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details animate-on-scroll">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Clean Code</h3>
+                        <p>Writing maintainable, well-structured code that follows best practices and modern standards.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Building layouts that look and work great on all devices, from phones to desktops.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Optimizing for speed and efficiency to deliver fast, seamless user experiences.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Copyright</h3>
-            <p>&copy; 2026 Tech Nova. All rights reserved.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills &amp; Technologies</h2>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.071-.757.541-6.03.089-.998H5.323l.245 2.718h7.51l-.262 2.782H5.813L6.3 9.75h2.231zm.441 3.812l1.035 11.629 2.947.826 2.965-.827 1.025-11.628H8.972z"/></svg>
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.355-1.12.589-9.025.255-2.22L18.59 4.414v-.001z"/></svg>
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.615-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.585-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.31 0-.6.065-.86.19-1.098.535-1.517 2.17-1.175 4.507-.95.345-1.83.737-2.62 1.172C.896 8.21 0 9.283 0 10.276c0 1.006.896 2.081 2.462 3.095.793.44 1.68.837 2.637 1.185-.33 2.326.086 3.948 1.178 4.48.26.126.55.19.86.19 1.347 0 3.108-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.31 0 .6-.064.86-.19 1.092-.532 1.51-2.154 1.175-4.48.957-.348 1.844-.745 2.637-1.186C23.104 12.358 24 11.282 24 10.276c0-.993-.896-2.067-2.462-3.08-.793-.44-1.68-.838-2.637-1.186.332-2.326-.084-3.947-1.176-4.48-.26-.126-.55-.19-.86-.19zM9.339 3.835c1.23-1.18 2.47-1.87 3.377-1.87.11 0 .21.017.302.052.428.208.686 1.005.594 2.243-.024.33-.07.68-.137 1.047-1.073-.22-2.22-.343-3.412-.363-1.2-.02-2.354.077-3.432.27.006-.018.013-.034.02-.052.255-1.278.72-1.327.688-1.327zm.84 2.404a25.55 25.55 0 0 1 3.635 0c.626.96 1.2 1.957 1.72 2.988-.52 1.032-1.094 2.03-1.72 2.99a25.538 25.538 0 0 1-3.636 0c-.627-.96-1.2-1.958-1.72-2.99.52-1.031 1.093-2.028 1.72-2.988z"/></svg>
+                    </div>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.636-.084-.917-.248L7.783 21.77c-.436-.244-.224-.332-.08-.382.729-.254.877-.312 1.655-.753.082-.046.189-.028.274.023l2.54 1.508a.345.345 0 0 0 .326 0l9.893-5.712a.33.33 0 0 0 .163-.289V4.733a.339.339 0 0 0-.166-.292L12.499 2.73a.323.323 0 0 0-.325 0L2.28 8.44a.336.336 0 0 0-.168.292v11.432c0 .118.064.23.163.284l2.712 1.566c1.472.736 2.372-.131 2.372-1.002V9.634c0-.17.137-.301.309-.301h1.343c.167 0 .308.131.308.301v11.178c0 1.963-1.07 3.09-2.932 3.09-.573 0-1.024 0-2.283-.62L1.49 21.772A1.845 1.845 0 0 1 .575 20.16V8.73c0-.674.36-1.304.917-1.64L11.385.376a1.909 1.909 0 0 1 1.833 0l9.893 5.716c.557.336.917.966.917 1.64v11.43c0 .674-.36 1.305-.917 1.64l-9.893 5.713a1.827 1.827 0 0 1-.92.485zm2.71-7.87c-3.856 0-4.66-1.77-4.66-3.259 0-.17.137-.301.308-.301h1.37c.153 0 .28.11.306.26.207 1.398.823 2.105 3.626 2.105 2.229 0 3.177-.504 3.177-1.685 0-.681-.268-1.187-3.737-1.528-2.9-.288-4.694-.928-4.694-3.252 0-2.142 1.805-3.418 4.833-3.418 3.4 0 5.085 1.18 5.297 3.71a.311.311 0 0 1-.308.337h-1.376a.306.306 0 0 1-.296-.243c-.328-1.462-1.13-1.93-3.317-1.93-2.443 0-2.728.852-2.728 1.49 0 .773.336 1 3.626 1.436 3.257.432 4.805 1.044 4.805 3.327 0 2.313-1.926 3.636-5.287 3.636z"/></svg>
+                    </div>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.33c.05-.36.075-.722.077-1.084.007-.783-.07-1.57-.233-2.34-.464-2.15-1.634-3.487-2.122-4.218-.406-.747-.527-1.225-.527-1.225s.283.636.925 1.282c.496.494.786.842 1.459 1.942.206.337.394.687.565 1.047.25.452.468.926.65 1.415.11.27.21.55.297.84.25.67.431 1.36.55 2.063.037.254.063.51.078.768h.065c1.034-.037 5.865-2.088 6.985-8.313.634-4.084-.467-6.37-1.812-8.626z"/></svg>
+                    </div>
+                    <h3>Firebase</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="E-Commerce Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>A full-featured admin dashboard with real-time analytics, inventory management, and order tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="Task Manager App" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>A collaborative task management tool with drag-and-drop boards, reminders, and team features.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Weather App" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Forecast App</h3>
+                        <p>Beautiful weather application with 7-day forecasts, interactive maps, and location-based alerts.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Portfolio Generator" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Generator</h3>
+                        <p>A tool that generates professional portfolio websites from simple configuration files.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <p class="contact-text">Have a project in mind or just want to say hello? I'd love to hear from you. Fill out the form and I'll get back to you as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                            <span>sailokeshthangadu@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Coimbatore, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo footer-logo">SL<span class="accent">.</span></a>
+                <p>Building digital experiences that matter.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sai Lokesh. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

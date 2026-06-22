@@ -1,12 +1,38 @@
+/* ===================================================
+   Design Tokens (CSS Custom Properties)
+   Single source of truth for colors, spacing, radii,
+   and typography values used across the site.
+   =================================================== */
+:root {
+    --color-primary: #0f4c4c;
+    --color-accent: #0b8a6c;
+    --color-accent-hover: #096a54;
+    --color-text: #222;
+    --color-bg: #f2f6f5;
+    --color-surface: white;
+    --color-border: #ddd;
+
+    --radius-sm: 5px;
+    --radius-md: 8px;
+
+    --section-padding: 35px 0;
+    --card-gap: 25px;
+
+    --font-stack: Arial, Helvetica, sans-serif;
+}
+
+/* ===================================================
+   Reset & Base
+   =================================================== */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background-color: #f2f6f5;
+    font-family: var(--font-stack);
+    color: var(--color-text);
+    background-color: var(--color-bg);
 }
 
 img {
@@ -14,9 +40,55 @@ img {
     display: block;
 }
 
+/* ===================================================
+   Shared Utilities
+   Reusable patterns extracted from repeated rules.
+   =================================================== */
+
+/* Themed heading color used by product details, about, contact, and cards */
+.themed-heading {
+    color: var(--color-primary);
+}
+
+/* Card-like container: white surface, border, rounded corners */
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+/* Full-width image with rounded corners (hero, product, card images) */
+.rounded-image {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+
+/* Content sections with standard vertical padding */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Primary CTA button */
+.buy-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    color: var(--color-surface);
+    background-color: var(--color-accent);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* ===================================================
+   Header
+   =================================================== */
 .site-header {
-    background-color: #0f4c4c;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -61,36 +133,25 @@ nav li {
 nav a {
     display: inline-block;
     padding: 8px 12px;
-    color: white;
-    border-radius: 5px;
+    color: var(--color-surface);
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    color: #0f4c4c;
-    background-color: white;
+    color: var(--color-primary);
+    background-color: var(--color-surface);
 }
 
 .button-container {
     margin: 0;
 }
 
-.buy-btn {
-    display: inline-block;
-    padding: 10px 18px;
-    color: white;
-    background-color: #0b8a6c;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.buy-btn:hover {
-    background-color: #096a54;
-}
-
+/* ===================================================
+   Hero
+   =================================================== */
 .hero {
     width: 90%;
     max-width: 1100px;
@@ -113,13 +174,13 @@ nav a:hover {
 }
 
 .hero-tag {
-    color: #0b8a6c;
+    color: var(--color-accent);
     font-weight: bold;
 }
 
 .home-content h2 {
     margin: 10px 0;
-    color: #0f4c4c;
+    color: var(--color-primary);
     font-size: 38px;
 }
 
@@ -128,56 +189,30 @@ nav a:hover {
     line-height: 1.5;
 }
 
-.home-image,
-.product-image,
-.product-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.product-section,
-.about-section,
-.contact-section {
-    padding: 35px 0;
-}
-
+/* ===================================================
+   Products
+   =================================================== */
 .featured-product {
     display: flex;
-    gap: 25px;
+    gap: var(--card-gap);
     align-items: center;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
 }
 
 .featured-product img {
     width: 50%;
 }
 
-.product-details h3,
-.about-section h2,
-.contact-section h2 {
-    color: #0f4c4c;
-}
-
 .product-cards-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 35px 0;
+    gap: var(--card-gap);
+    padding: var(--section-padding);
 }
 
 .product-card {
     padding: 15px;
     text-align: center;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.product-card h3 {
-    color: #0f4c4c;
 }
 
 .product-card img {
@@ -186,21 +221,27 @@ nav a:hover {
 }
 
 .price {
-    color: #0b8a6c;
+    color: var(--color-accent);
     font-size: 20px;
     font-weight: bold;
 }
 
+/* ===================================================
+   About & Contact
+   =================================================== */
 .about-section,
 .contact-section {
     line-height: 1.6;
 }
 
+/* ===================================================
+   Footer
+   =================================================== */
 .site-footer {
     margin-top: 30px;
     padding: 25px;
-    color: white;
-    background-color: #0f4c4c;
+    color: var(--color-surface);
+    background-color: var(--color-primary);
     text-align: center;
 }
 
@@ -213,6 +254,9 @@ nav a:hover {
     margin: 5px 0;
 }
 
+/* ===================================================
+   Responsive
+   =================================================== */
 @media (max-width: 768px) {
     .site-header {
         flex-direction: column;
